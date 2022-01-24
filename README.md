@@ -1,4 +1,4 @@
-First CNN classifier to classify between cats and dogs. Achieved 94% accuracy. 
+First CNN classifier to classify between cats and dogs. Achieved 90% accuracy. 
 
 # Neural Networks
 
