@@ -9,7 +9,6 @@ from keras.models import Sequential
 from keras.layers import Conv2D,MaxPooling2D,\
      Dropout,Flatten,Dense,Activation,\
      BatchNormalization
-from ann_visualizer.visualize import ann_viz
 
 
 img_height = 28
@@ -120,4 +119,3 @@ test_loss, test_acc = model.evaluate(ds_validation, verbose=2)
 
 print('\nTest accuracy:', test_acc)
 
-ann_viz(model, title="My first neural network")
