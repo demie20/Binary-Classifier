@@ -1,7 +1,7 @@
 ![alt-text](https://forthebadge.com/images/badges/contains-technical-debt.svg)
 ![alt-text](https://forthebadge.com/images/badges/made-with-python.svg)
 
-My first CNN classifier to classify between cats and dogs. Achieved 90% accuracy. 
+My first CNN classifier to classify between cats and dogs. Achieved 74% accuracy. 
 
 # Neural Networks
 
