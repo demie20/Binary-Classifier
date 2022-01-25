@@ -29,7 +29,7 @@ model = keras.Sequential(
 )
 
 ds_train = tf.keras.preprocessing.image_dataset_from_directory(
-    "D:\VSC\CNN\kagglecatsanddogs_3367a\PetImages/",
+    "D:\VSC\CNN\dogs_cats\dataset",
     labels="inferred",
     label_mode="int",  
     
@@ -44,7 +44,7 @@ ds_train = tf.keras.preprocessing.image_dataset_from_directory(
 )
 
 ds_validation = tf.keras.preprocessing.image_dataset_from_directory(
-    "D:\VSC\CNN\kagglecatsanddogs_3367a\PetImages/",
+    "D:\VSC\CNN\dogs_cats\dataset",
     labels="inferred",
     label_mode="int",  
     
@@ -74,6 +74,7 @@ for folder_name in ("Cat", "Dog"):
             os.remove(fpath)
 
 print("Deleted %d images" % num_skipped)
+
 def augment(x, y):
     image = tf.image.random_brightness(x, max_delta=0.05)
     return image, y
